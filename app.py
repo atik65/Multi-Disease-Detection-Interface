@@ -19,29 +19,29 @@ from reportlab.pdfgen import canvas
 # Disease configuration dictionary
 # ============================================
 DISEASES = {
-    "Brain Tumor": {
-        "MODEL_PATH": "mri_best_model.h5",
+    "Brain Tumor MRI": {
+        "MODEL_PATH": "MRI_best_model.h5",
         "IMG_SIZE": (224, 224),
-        "CLASS_NAMES": ["glioma", "meningioma", "no_tumor", "pituitary"],
+        "CLASS_NAMES": ["Glioma", "Meningioma", "No_Tumor", "Pituitary"],
         "ACCURACY": 0.9,
         "TITLE": "🧠 Brain Tumor MRI Classification",
         "DESC": "Upload an MRI image to classify tumor type using the trained CNN model."
     },
-    "Pneumonia": {
-        "MODEL_PATH": "mri_best_model.h5",
+    "Gallbladder Ultrasound": {
+        "MODEL_PATH": "Ultrasound_gallblader_best_model.h5",
         "IMG_SIZE": (224, 224),
-        "CLASS_NAMES": ["normal", "pneumonia"],
+        "CLASS_NAMES": ["Abdomen", "Adenomyoma", "Carcinoma", "Cholecystitis", "Gallstones", "Gangrenous", "Perforation", "Polyps", "WallThickening"],
         "ACCURACY": 0.998,
-        "TITLE": "🫁 Pneumonia X-Ray Classification",
-        "DESC": "Upload a chest X-ray image to detect pneumonia."
+        "TITLE": "🫁 Gallbladder Ultrasound Classification",
+        "DESC": "Upload a gallbladder ultrasound image to classify conditions."
     },
-    "Skin Cancer": {
-        "MODEL_PATH": "mri_best_model.h5",
+    "Lung Cancer": {
+        "MODEL_PATH": "Lung_best_model.h5",
         "IMG_SIZE": (224, 224),
-        "CLASS_NAMES": ["benign", "malignant"],
-        "ACCURACY": 0.97,
-        "TITLE": "🌿 Skin Cancer Classification",
-        "DESC": "Upload a skin lesion image to classify cancer type."
+        "CLASS_NAMES": ["lung_aca", "lung_scc", "lung_n"],
+        "ACCURACY": 0.99,
+        "TITLE": "🌿 Lung Cancer Classification",
+        "DESC": "Upload a lung image to classify cancer type."
     }
 }
 
