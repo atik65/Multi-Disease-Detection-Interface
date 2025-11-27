@@ -23,7 +23,7 @@ DISEASES = {
         "MODEL_PATH": "MRI_best_model.h5",
         "IMG_SIZE": (224, 224),
         "CLASS_NAMES": ["Glioma", "Meningioma", "No_Tumor", "Pituitary"],
-        "ACCURACY": 0.9,
+        "ACCURACY": 0.9915,
         "TITLE": "🧠 Brain Tumor MRI Classification",
         "DESC": "Upload an MRI image to classify tumor type using the trained CNN model."
     },
@@ -31,7 +31,7 @@ DISEASES = {
         "MODEL_PATH": "Ultrasound_gallblader_best_model.h5",
         "IMG_SIZE": (224, 224),
         "CLASS_NAMES": ["Abdomen", "Adenomyoma", "Carcinoma", "Cholecystitis", "Gallstones", "Gangrenous", "Perforation", "Polyps", "WallThickening"],
-        "ACCURACY": 0.998,
+        "ACCURACY": 0.9981,
         "TITLE": "🫁 Gallbladder Ultrasound Classification",
         "DESC": "Upload a gallbladder ultrasound image to classify conditions."
     },
@@ -39,7 +39,7 @@ DISEASES = {
         "MODEL_PATH": "Lung_best_model.h5",
         "IMG_SIZE": (224, 224),
         "CLASS_NAMES": ["lung_aca", "lung_scc", "lung_n"],
-        "ACCURACY": 0.99,
+        "ACCURACY": 0.9993,
         "TITLE": "🌿 Lung Cancer Classification",
         "DESC": "Upload a lung image to classify cancer type."
     }
